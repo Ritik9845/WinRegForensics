@@ -151,7 +151,28 @@ python regforensics.py \
 - **colorama** – Colored terminal output
 
 ---
+## Why WinRegForensics over Volatility3?
 
+| Feature | WinRegForensics | Volatility3 |
+|---|---|---|
+| Purpose | Registry-focused forensics | General memory forensics |
+| ease of use | Single command per module | Complex plugin syntax |
+| Output | Formatted tables | Raw text output |
+| Reports | HTML, JSON, CSV built-in | No built-in reporting |
+| Registry Modules | 10 dedicated modules | Generic registry plugins |
+| UserAssist Decoding | ROT-13 auto-decoded | Manual decoding needed |
+| USB Forensics | Dedicated module | No dedicated plugin |
+| Persistence Detection | Dedicated module | No dedicated plugin |
+| SAM Parser | Built-in | Requires separate plugin |
+| Network Artifacts | Dedicated module | No dedicated plugin |
+| Offline Hive Analysis | Yes | No |
+| Symbol Setup | Auto-handled | Manual setup required |
+| Learning Curve | Beginner friendly | Advanced users |
+| Memory + Hive | Both supported | Memory only |
+| Platform | Windows focused | Cross-platform |
+
+
+---
 ## Legal Notice
 
 > This tool is intended **exclusively** for authorized forensic investigations,
