@@ -19,6 +19,8 @@ A Python tool for performing comprehensive Windows registry forensics from memor
 | **System Info** | OS version, computer name, timezone, install date, last shutdown |
 | **Key Browser** | Browse any specific key/value in a live memory image |
 | **Report Export** | JSON, CSV, and HTML report generation |
+| **RecentDocs (Module 11)** | Extract recently accessed files (MRU artifacts) |
+| **Installed Programs (Module 12)** | Enumerate installed software & uninstall history |
 
 ---
 
@@ -103,6 +105,16 @@ python regforensics.py \
 5. Run: python regforensics.py --sam ./hives/SAM --system ./hives/SYSTEM --sam-parse
 6. Review HTML report in ./regforensics_output/report.html
 ```
+
+---
+
+## Module-Specific Examples
+
+# Recently accessed files from NTUSER.DAT:
+  python regforensics.py --hive registry.NTUSERDAT.hive --recentdocs
+
+  # Installed programs from SOFTWARE hive:
+  python regforensics.py --hive registry.SOFTWARE.hive --installed
 
 ---
 
